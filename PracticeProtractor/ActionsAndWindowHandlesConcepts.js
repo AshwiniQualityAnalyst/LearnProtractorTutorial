@@ -27,6 +27,23 @@ describe('Actions Demo', function(){
 				//Now clicking on the link it will open another window and that is why we are handling promise because protractor is very fast and we want to see new window open	
 				browser.sleep(3000);
 				//COOL STUFF
+				//Lets print the TITLE of PARENT Window
+				browser.getTitle().then(function(BrowserTitle){
+					console.log("Print Browser Title after switching: "+BrowserTitle);
+				});
+
+				//Now learn GET WINDOW HANDLES Method meaning dealing with Multiple windows or tabs
+				browser.getAllWindowHandles().then(function(WindowTabs){
+					browser.switchTo.window(WindowTabs[1]);
+					//Lets print the TITLE of CHILD Window
+					browser.getTitle().then(function(BrowserTitle){
+						console.log("Print Browser Title after switching: "+BrowserTitle);
+					});
+					browser.switchTo.window(WindowTabs[0]);
+					browser.getTitle().then(function(BrowserTitle){
+						console.log("Print Browser Title 3rd time after switching to parent again : "+BrowserTitle);
+					});
+				});
 			});
 
 		});
