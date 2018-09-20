@@ -34,10 +34,10 @@ describe('Drop Down Demo', function(){
 		
 		//if you want to click individually the drop down items use below chain locators
 		
-		/*element(by.model("")).element(by.css("option:nth-child(1)")).click();*/ //ADDITION
-		/*element(by.model("")).element(by.css("option:nth-child(2)")).click();*/ //DIVISION
-		/*element(by.model("")).element(by.css("option:nth-child(3)")).click();*/ //MODULO
-		/*element(by.model("")).element(by.css("option:nth-child(4)")).click();*/ //MULTIPLICATION
-		/*element(by.model("")).element(by.css("option:nth-child(5)")).click();*/ //SUBTRACTION
+		/*element(by.model("operator")).element(by.css("option:nth-child(1)")).click();*/ //ADDITION
+		/*element(by.model("operator")).element(by.css("option:nth-child(2)")).click();*/ //DIVISION
+		/*element(by.model("operator")).element(by.css("option:nth-child(3)")).click();*/ //MODULO
+		/*element(by.model("operator")).element(by.css("option:nth-child(4)")).click();*/ //MULTIPLICATION
+		/*element(by.model("operator")).element(by.css("option:nth-child(5)")).click();*/ //SUBTRACTION
 	});
 })
