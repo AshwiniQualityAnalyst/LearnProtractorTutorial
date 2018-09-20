@@ -5,9 +5,9 @@ ls
 cd 'Your folder name'
 *****
 Step 1:
-git config --global user.name "AshwiniQualityAnalyst"
+git config --global user.name "YourID"
 Step 2:
-git config --global user.email AshwiniQualityAnalyst@gmail.com
+git config --global user.email YourID@gmail.com
 Step 3:
 git clone "repository url"--Github repo url
 Step 4:
