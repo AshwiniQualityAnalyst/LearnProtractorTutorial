@@ -1,0 +1,25 @@
+*****
+cd
+cd /d
+ls
+cd 'Your folder name'
+*****
+Step 1:
+git config --global user.name "AshwiniQualityAnalyst"
+Step 2:
+git config --global user.email AshwiniQualityAnalyst@gmail.com
+Step 3:
+git clone "repository url"--Github repo url
+Step 4:
+git add filename --which you have created on machine locally
+Step 5:
+git status ---check status
+Step 6:
+git commit -m "First Commit"--- in quotes write any comment
+Step 7:
+git push -u origin master
+Step 8:
+---Do some changes in your file which you have created and then again push it on git
+git status ---check status
+git commit -m "Second Commit"--- in quotes write any comment
+-------------------
