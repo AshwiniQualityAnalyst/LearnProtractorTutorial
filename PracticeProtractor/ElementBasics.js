@@ -25,6 +25,11 @@ describe('Protractor Element Demo', function(){
 		//1.Sequence is not guaranteed
 		//So to overcome this write below code
 
+		//Jasmine Assertions
+		expect(element(by.css("h2[class='ng-binding']")).getText()).toBe("5");
+		//Jasmine take cares of resolving the promise
+		//Link to jasmine assertion https://jasmine.github.io/2.0/introduction.html
+
 		element(by.css("h2[class='ng-binding']")).getText().then(function(text){
 			//Once the promise will get resloved here the output will also be extracted but that
 			//extarcted one will be catch in argument ie; text
