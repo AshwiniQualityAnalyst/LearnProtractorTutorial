@@ -1,6 +1,6 @@
 exports.config = {
 		//seleniumAddress: 'http://localhost:4444/wd/hub',
-		specs: ['Alerts.js']
+		specs: ['SynchronizationConcepts.js']
 }
 
 //If you want to run in FIREFOX browser
