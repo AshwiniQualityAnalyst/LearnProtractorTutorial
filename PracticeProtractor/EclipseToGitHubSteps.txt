@@ -1,0 +1,24 @@
+How to import Project from eclipse to GitHub?
+
+Steps:
+
+1.Open Eclipse IDE and create or open a new project.
+2.Right click on project-> Team-> Share Project->
+3.Select Git and click on Next,
+4.Click checkbox "use or create repository in parent folder of project",
+5.Select your project from below box,
+6.Click on "create Repository" below and click Finish.
+7.Right click on project-> Team-> Commit->
+8.Write commit message (e.g. first commit),
+9.Select checkbox below of your project directories and files you want to push (don't select git files which name contains 'ignore' words e.g. gitignore) and then click Commit.
+10.Right click on project-> Team-> Remote-> Push->
+11.Enter Git Repository Link in the URL field,
+12.Enter Username and Password and click Next.
+13.
+From 'source ref:' dropdown select "master [branch]",
+From 'destination ref:' select "master [branch]" and
+From 'Remote ref to delete' select "master [branch]".
+14.Click on "Add All Branches Spec" and "Add All Tags Spec",
+15.Click "Force Update All Specs" and then click Finish.
+16.You will see a message like "Pushed to -your repository link-" and then click OK.
+17.Go to your GitHub Repository and check the project has been pushed.
