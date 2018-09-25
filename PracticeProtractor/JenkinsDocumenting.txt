@@ -1,0 +1,36 @@
+Jenkins
+Basically a automation server for creating jobs
+Download the jenkins.war file
+Open CMD and run java -jar jenkins.war file or else run "java -jar jenkins.war -httpPort=9090"
+Open URL http://localhost:8080/ or http://localhost:9090/
+
+Configuration Steps:
+
+1.Open jenkins
+2.Click on "New Item"
+3.Enter an item name, name it as "Protractor"
+4.Select a Freestyle project
+5.Click on "OK" at the bottom
+6.For now Check General >> Source Code Management
+BREAK
+So let's say if your project is the local system
+7.Click on Advanced (You will find this in Description)
+8.Click on the checkbox "Use custom workspace"
+BREAK
+Open below location and copy your project inside jenkins location
+Location: C:\Users\10645280\.jenkins
+9.Step number 8 continues
+
+10.Provide the input to Directory
+${JENKINS_HOME}/PracticeProtractor
+
+11.Now click on General >> Build >> Add build step
+12.Select "Execute Windows batch command"
+13.Make sure while running your script cooment the below part in your config file
+exports.config = {
+		//seleniumAddress: 'http://localhost:4444/wd/hub',//---Comment this line
+14.Inside the "Execute Windows batch command" TEXTBOX pass the commands which is mentioned in the package.json file
+for eg; npm run SmokeSuite , npm run protractor, npm install
+15.We can add multiple "Execute Windows batch command"
+
+15.Now after saving your JENKINS configuration run your project by just click on "Build Now"
