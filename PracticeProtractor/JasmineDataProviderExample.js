@@ -4,7 +4,7 @@ describe('Protractor Element Demo', function(){
 	var driver = require("./ImportantReferElementBasics.js")
 	var using = require('jasmine-data-provider');
 	var driver1 = require("./JasmineDataProvider.js");
-	
+
 
 
 	beforeEach(function(){   
@@ -16,8 +16,8 @@ describe('Protractor Element Demo', function(){
 	//description stores sub object name
 	//For every iteration one data set will be picked
 	using(driver1.DataDrivenTesting, function (data, description){
-
-		it('Testing Calculator functionallity', function(){
+		//Now see the use of description and run this script
+		it('Testing Calculator functionallity: '+description, function(){
 			driver.firstInput.sendKeys(data.firstinput);
 			driver.secondInput.sendKeys(data.secondinput);
 			driver.goButton.click();

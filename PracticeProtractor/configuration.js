@@ -15,6 +15,20 @@ exports.config = {
 						savePath: 'target/screenshots'
 					})
 			);
+		}, //Everytime Put comma here when adding new thing inside onPrepare
+
+		//Now this is when we want to run test suite---VERY IMPORTANT CONCEPT
+		suites:
+		{
+			Smoke: ['Alerts.js', 'DropDown.js'], //when running multiple files use >>['script1.js', 'script2.js', ..... ]
+			Regression: 'Alerts.js'  //when running single files use just one filename.js
+		}, //Everytime Put comma here when adding new thing inside onPrepare
+
+		//After creating suites configure this in PACKAGE.JSON
+
+		// Options to be passed to Jasmine-node.
+		jasmineNodeOpts: {
+			showColors: true, // Use colors in the command line report.
 		}
 };
 

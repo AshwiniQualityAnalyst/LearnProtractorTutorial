@@ -7,7 +7,7 @@ module.exports=
 			{
 				firstinput: "2",
 				secondinput: "5",
-				result: "5"
+				result: "7"
 			},
 
 			SecondData:   //Subobjects
@@ -21,7 +21,7 @@ module.exports=
 			{
 				firstinput: "2",
 				secondinput: "5",
-				result: "6"
+				result: "7"
 			},
 		}
 }

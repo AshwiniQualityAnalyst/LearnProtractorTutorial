@@ -12,9 +12,10 @@ describe('Alerts Demo', function(){
 		// or else accordingly comment any one while running
 
 		//Dismiss for negative buttons
+		/*
 		browser.switchTo().alert().dismiss().then(function(){
 			browser.sleep(5000);
 		});
 
-	});
+*/	});
 });
