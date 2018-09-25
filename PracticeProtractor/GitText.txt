@@ -23,3 +23,6 @@ Step 8:
 git status ---check status
 git commit -m "Second Commit"--- in quotes write any comment
 -------------------
+
+All commands of git
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html

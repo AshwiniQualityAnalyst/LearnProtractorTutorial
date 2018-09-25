@@ -34,3 +34,7 @@ for eg; npm run SmokeSuite , npm run protractor, npm install
 15.We can add multiple "Execute Windows batch command"
 
 15.Now after saving your JENKINS configuration run your project by just click on "Build Now"
+
+16.Now if you want to Schdule your job
+Now click on General >> Build Triggers >> Click on the checkbox "Build periodically"
+This is important format of time configuration >> Minute(0-59)Hour(0-23)Day(1-7)Month(1-12)Day of the week
